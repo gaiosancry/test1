@@ -1,0 +1,141 @@
+  body {
+    font-family: Arial, sans-serif; /* 设置字体 */
+    line-height: 1.6; /* 设置行高 */
+    color: #333; /* 设置文本颜色 */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold; /* 设置标题加粗 */
+  }
+  
+  /* Wrapper */
+  #wrapper {
+    display: flex; /* 设置为 Flex 布局 */
+    flex-wrap: wrap; /* 设置自动换行 */
+  }
+  
+  /* Main */
+  #main {
+    flex: 1; /* 设置占据剩余空间 */
+    padding: 20px; /* 设置内边距 */
+  }
+  
+  .inner {
+    max-width: 1200px; /* 设置最大宽度 */
+    margin: 0 auto; /* 设置居中 */
+  }
+  
+  /* Header */
+  header#header {
+    display: flex; /* 设置为 Flex 布局 */
+    justify-content: space-between; /* 设置两端对齐 */
+    align-items: center; /* 设置垂直居中 */
+    margin-bottom: 20px; /* 设置下边距 */
+  }
+  
+  header#header .logo {
+    font-size: 24px; /* 设置字体大小 */
+    text-decoration: none; /* 取消下划线 */
+  }
+  
+  header#header .icons {
+    list-style: none; /* 去掉列表标记 */
+    padding: 0; /* 去掉内边距 */
+    display: flex; /* 设置为 Flex 布局 */
+  }
+  
+  header#header .icons li {
+    margin-right: 10px; /* 设置右边距 */
+  }
+  
+  /* Banner */
+  #banner {
+    display: flex; /* 设置为 Flex 布局 */
+    align-items: center; /* 设置垂直居中 */
+  }
+  
+  #banner .content {
+    flex: 1; /* 设置占据剩余空间 */
+  }
+  
+  #banner .image img {
+    max-width: 100%; /* 设置图片最大宽度 */
+  }
+  
+  /* Features */
+  .features {
+    display: flex; /* 设置为 Flex 布局 */
+    flex-wrap: wrap; /* 设置自动换行 */
+    justify-content: space-between; /* 设置两端对齐 */
+  }
+  
+  .features article {
+    flex-basis: 45%; /* 设置占据空间的基础值 */
+    margin-bottom: 20px; /* 设置下边距 */
+  }
+  
+  .features .content {
+    margin-left: 20px; /* 设置左边距 */
+  }
+  
+  /* Section */
+  section {
+    margin-bottom: 40px; /* 设置下边距 */
+  }
+  
+  /* Posts */
+  .posts {
+    display: flex; /* 设置为 Flex 布局 */
+    flex-wrap: wrap; /* 设置自动换行 */
+    justify-content: space-between; /* 设置两端对齐 */
+  }
+  
+  .posts article {
+    flex-basis: 45%; /* 设置占据空间的基础值 */
+    margin-bottom: 20px; /* 设置下边距 */
+  }
+  
+  .posts article img {
+    max-width: 100%; /* 设置图片最大宽度 */
+  }
+  
+  /* Sidebar */
+  #sidebar {
+    flex: 0 0 300px; /* 设置固定宽度 */
+    padding: 20px; /* 设置内边距 */
+    background-color: #f4f4f4; /* 设置背景色 */
+  }
+  
+  /* Menu */
+  nav#menu ul {
+    list-style: none; /* 去掉列表标记 */
+    padding: 0; /* 去掉内边距 */
+  }
+  
+  nav#menu ul li a {
+    display: block; /* 设置为块级元素 */
+    text-decoration: none; /* 取消下划线 */
+    padding: 10px 0; /* 设置内边距 */
+  }
+  
+  /* Section */
+  section ul.contact {
+    list-style: none; /* 去掉列表标记 */
+    padding: 0; /* 去掉内边距 */
+  }
+
+  /* Button */
+  .button {
+    background-color: #eb5c20; /* 设置背景色为橙色 */
+    border: none; /* 去掉边框 */
+    color: #fff; /* 设置文字颜色为白色 */
+    padding: 10px 20px; /* 设置内间距为 10px 20px */
+    border-radius: 5px; /* 设置边框半径为 5px */
+    font-size: 16px; /* 设置字体大小为 16px */
+    cursor: pointer; /* 设置鼠标指针为手形 */
+  }
+
+  /* Hover */
+  .button:hover {
+    background-color: #0069d9; /* 设置背景色为深蓝色 */
+  }

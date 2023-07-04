@@ -1,0 +1,164 @@
+/* 重置默认样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 全局样式 */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* 使用常见的无衬线字体 */
+  font-size: 16px; /* 设置默认字体大小为16像素 */
+  line-height: 1.5; /* 设置行高为1.5倍字体大小，以提高可读性 */
+  color: #333; /* 设置文字颜色为深灰色 */
+  background-color: #e1a263; /* 设置背景颜色为浅灰色 */
+}
+
+/* 布局样式 */
+#wrapper {
+  display: flex; /* 使用flex布局 */
+  flex-direction: column; /* 设置主轴方向为从上往下 */
+  justify-content: center; /* 沿垂直方向居中对齐 */
+  align-items: center; /* 沿水平方向居中对齐 */
+}
+
+#main {
+  flex-grow: 1; /* 设置主区域(#main)在剩余空间中占据尽可能多的空间 */
+  min-width: 320px; /* 设置最小宽度为320像素，以兼容较小的屏幕 */
+}
+
+#sidebar {
+  flex-shrink: 0; /* 设置侧边栏(#sidebar)不要缩小 */
+  width: 300px; /* 设置侧边栏的宽度为300像素 */
+}
+
+/* Header styles */
+/* 页头样式 */
+#header {
+  padding: 2em 0; /* 设置页头的上下内边距为2个字体高度 */
+  text-align: center; /* 设置页头中的文本居中对齐 */
+}
+
+.logo {
+  display: inline-block; /* 将logo设置为行内块元素 */
+  font-size: 1.5em; /* 设置logo的字体大小为1.5倍默认字体大小 */
+  font-weight: bold; /* 设置logo的字体加粗 */
+  text-decoration: none; /* 去掉logo的下划线 */
+  color: #333; /* 设置logo的颜色为深灰色 */
+}
+
+.logo:hover {
+  color: #000; /* 当鼠标悬停在logo上方时，将logo的颜色设置为黑色 */
+}
+
+.icons {
+  display: inline-block; /* 将图标组设置为行内块元素 */
+  margin-top: 1em; /* 将图标组与logo之间留出一定的空间 */
+}
+
+.icons li {
+  display: inline-block; /* 将图标设置为行内块元素 */
+  margin-right: 1em; /* 将图标之间的间距设置为1个字体宽度 */
+}
+
+.icons li a {
+  display: inline-block; /* 将图标的链接设置为行内块元素 */
+  width: 2.5em; /* 设置图标链接的宽度为2.5倍默认字体大小 */
+  height: 2.5em; /* 设置图标链接的高度为2.5倍默认字体大小 */
+  line-height: 2.5em; /* 设置图标链接的行高为2.5倍默认字体大小 */
+  text-align: center; /* 设置图标链接中的文本居中对齐 */
+  color: #eb5c20; /* 设置图标链接中的文本颜色为白色 */
+  background-color: #333; /* 设置图标链接的背景颜色为深灰色 */
+  border-radius: 50%; /* 将图标链接设置为圆形 */
+  transition: background-color 0.2s ease-in-out; /* 添加渐变效果 */
+}
+
+.icons li a:hover {
+  background-color: #000; /* 当鼠标悬停在图标链接上方时，将背景颜色设置为黑色 */
+}
+
+/* Banner styles */
+/* 横幅样式 */
+#banner {
+  position: relative; /* 将横幅设置为相对定位 */
+  padding: 4em 2em; /* 设置横幅的内边距 */
+  text-align: center; /* 设置横幅中的文本居中对齐 */
+  color: #eb5c20; /* 设置横幅中的文本颜色为白色 */
+}
+
+#banner h1 {
+  font-size: 3em; /* 设置横幅标题的字体大小为3倍默认字体大小 */
+  font-weight: bold; /* 设置横幅标题的字体加粗 */
+  text-shadow: 2px 2px #000; /* 添加文字阴影效果 */
+}
+
+#banner p {
+  margin-top: 1em; /* 将横幅标题与文本之间留出一定的空间 */
+  font-size: 1.5em; /* 设置横幅文本的字体大小为1.5倍默认字体大小 */
+}
+
+/* Navigation styles */
+/* 导航样式 */
+nav {
+  margin-top: 2em; /* 将导航与横幅之间留出一定的空间 */
+}
+
+nav ul {
+  list-style: none; /* 去掉导航列表的默认样式 */
+  display: flex; /* 使用flex布局 */
+  justify-content: center; /* 沿水平方向居中对齐 */
+}
+
+nav li {
+  margin-right: 1em; /* 将导航项之间的间距设置为1个字体宽度 */
+}
+
+nav a {
+  display: block; /* 将导航链接设置为块级元素 */
+  padding: 0.5em; /* 设置导航链接的内边距 */
+  color: #333; /* 设置导航链接的颜色为深灰色 */
+  text-decoration: none; /* 去掉导航链接的下划线 */
+  transition: color 0.2s ease-in-out; /* 添加渐变效果 */
+}
+
+nav a:hover {
+  color: #000; /* 当鼠标悬停在导航链接上方时，将链接的颜色设置为黑色 */
+}
+
+/* Main content styles */
+/* 主内容样式 */
+article {
+  margin-top: 2em; /* 将主内容与导航之间留出一定的空间 */
+  padding: 1em; /* 设置主内容的内边距 */
+  background-color: #eb5c20; /* 设置主内容的背景颜色为白色 */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+article h2 {
+  margin-bottom: 1em; /* 将主内容标题与文本之间留出一定的空间 */
+}
+
+article p {
+  margin-bottom: 1em; /* 将主内容段落之间留出一定的空间 */
+  line-height: 1.6; /* 设置行高为1.6倍字体大小，以提高可读性 */
+}
+
+/* Footer styles */
+/* 页脚样式 */
+#footer {
+  margin-top: 2em; /* 将页脚与主内容之间留出一定的空间 */
+  padding: 1em; /* 设置页脚的内边距 */
+  text-align: center; /* 将页脚中的文本居中对齐 */
+  background-color: #333; /* 设置页脚的背景颜色为深灰色 */
+  color: #eb5c20; /* 设置页脚中的文本颜色为白色 */
+}
+
+#footer p {
+  margin-bottom: 1em; /* 将页脚段落之间留出一定的空间 */
+}
+
+#footer a {
+  color: #eb5c20; /* 设置页脚链接的颜色为白色 */
+  text-decoration: none; /* 去掉页脚链接的下划线 */
+  transition: color 0.2s ease-in-out; 
+}
