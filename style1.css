@@ -1,0 +1,194 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 设置字体 */
+  line-height: 1.6; /* 设置行高 */
+  color: #333; /* 设置文本颜色 */
+  background-color: #ffe1d4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; /* 设置标题加粗 */
+}
+
+/* Wrapper */
+#wrapper {
+  display: flex; /* 设置为 Flex 布局 */
+  flex-wrap: wrap; /* 设置自动换行 */
+}
+
+/* Main */
+#main {
+  flex: 1; /* 设置占据剩余空间 */
+  padding: 20px; /* 设置内边距 */
+}
+
+.inner {
+  max-width: 1200px; /* 设置最大宽度 */
+  margin: 0 auto; /* 设置居中 */
+}
+
+/* Header */
+header#header {
+  display: flex; /* 设置为 Flex 布局 */
+  justify-content: space-between; /* 设置两端对齐 */
+  align-items: center; /* 设置垂直居中 */
+  margin-bottom: 20px; /* 设置下边距 */
+}
+
+header#header .logo {
+  font-size: 24px; /* 设置字体大小 */
+  text-decoration: none; /* 取消下划线 */
+}
+
+header#header .logo:hover {
+  /* 添加鼠标悬停效果 */
+  color: #eb5c20;
+}
+
+header#header .icons {
+  list-style: none; /* 去掉列表标记 */
+  padding: 0; /* 去掉内边距 */
+  display: flex; /* 设置为 Flex 布局 */
+}
+
+header#header .icons li {
+  margin-right: 10px; /* 设置右边距 */
+}
+
+/* Banner */
+#banner {
+  display: flex; /* 设置为 Flex 布局 */
+  align-items: center; /* 设置垂直居中 */
+  margin-bottom: 20px; /* 添加圆角和虚线边框 */
+  border-radius: 10px;
+}
+
+#banner .content {
+  flex: 1; /* 设置占据剩余空间 */
+}
+
+#banner .image img {
+  max-width: 100%; /* 设置图片最大宽度 */
+}
+
+/* Features */
+.features {
+  display: flex; /* 设置为 Flex 布局 */
+  flex-wrap: wrap; /* 设置自动换行 */
+  justify-content: space-between; /* 设置两端对齐 */
+}
+
+.features article {
+  flex-basis: 45%; /* 设置占据空间的基础值 */
+  margin-bottom: 20px; /* 设置下边距 */
+}
+
+.features .content {
+  margin-left: 20px; /* 设置左边距 */
+}
+
+/* Section */
+section {
+  margin-bottom: 40px; /* 设置下边距 */
+}
+
+/* Posts */
+.posts {
+  display: flex; /* 设置为 Flex 布局 */
+  flex-wrap: wrap; /* 设置自动换行 */
+  justify-content: space-between; /* 设置两端对齐 */
+}
+
+.posts article {
+  flex-basis: 45%; /* 设置占据空间的基础值 */
+  margin-bottom: 20px; /* 设置下边距 */
+}
+
+.posts article img {
+  max-width: 100%; /* 设置图片最大宽度 */
+}
+
+/* Sidebar */
+#sidebar {
+  flex: 0 0 300px; /* 设置固定宽度 */
+  padding: 20px; /* 设置内边距 */
+  background-color: #f7f6f6; /* 设置背景色 */
+}
+
+/* Menu */
+nav#menu ul {
+  list-style: none; /* 去掉列表标记 */
+  padding: 0; /* 去掉内边距 */
+}
+
+nav#menu ul li a {
+  display: block; /* 设置为块级元素 */
+  text-decoration: none; /* 取消下划线 */
+  padding: 10px 0; /* 设置内边距 */
+}
+
+nav#menu ul li a:hover {
+  /* 添加鼠标悬停效果 */
+  background-color: #0074D9;
+  color: #fff;
+}
+
+/* Section */
+section ul.contact {
+  list-style: none; /* 去掉列表标记 */
+  padding: 0; /* 去掉内边距 */
+}
+
+/* Button */
+.button {
+background-color: #eb5c20; /* 设置背景色为橙色 */
+border: none; /* 去掉边框 */
+color: #fff; /* 设置文字颜色为白色 */
+padding: 10px 20px; /* 设置内间距为 10px 20px */
+border-radius: 5px; /* 设置边框半径为 5px */
+font-size: 16px; /* 设置字体大小为 16px */
+cursor: pointer; /* 设置鼠标指针为手形 */
+}
+
+/* Hover */
+.button:hover {
+background-color: #0069d9; /* 设置背景色为深蓝色 */
+}
+.input{
+width: 40%; /* 设置输入框的宽度为父元素宽度的40% */
+height: 40px; /* 设置输入框的高度为40像素 */
+position: relative; /* 设置输入框相对定位 */
+margin: auto; /* 设置输入框水平居中 */
+padding-top: 300px; /* 设置输入框顶部内边距为300像素 */
+}
+
+input[type=text]{
+border: 2px solid black; /* 设置输入框边框为2像素宽的黑色边框 */
+box-sizing: border-box; /* 设置输入框盒模型为border-box */
+background-repeat: no-repeat; /* 设置背景图片不重复 */
+background-position: left; /* 设置背景图片左对齐 */
+background-size: contain; /* 设置背景图片自适应大小 */
+height: inherit; /* 设置输入框高度与父元素相同 */
+width: 100%; /* 设置输入框宽度为父元素宽度 */
+outline: none; /* 取消输入框的轮廓线 */
+border-radius: 4px; /* 设置输入框圆角为4像素 */
+font-size: 16px; /* 设置输入框字体大小为16像素 */
+background-color: gray; /* 设置输入框背景颜色为灰色 */
+padding: 12px 30px 12px 45px; /* 设置输入框内边距 */
+-webkit-transition: width 0.6s ease-in-out; /* 设置输入框宽度变化的过渡效果 */
+transition: width 0.6s ease-in-out;
+}
+
+input[type=text]:hover{
+width: 115%; /* 当鼠标悬停时，将输入框宽度扩展到父元素的115% */
+outline: 4px solid skyblue; /* 为输入框添加轮廓线 */
+border: transparent; /* 取消输入框边框 */
+}
+
+input[type=text]:focus{
+outline: 4px solid skyblue; /* 当输入框获得焦点时，为其添加轮廓线 */
+border: transparent; /* 取消输入框边框 */
+}
+
+input[type=a]{
+margin: 0 auto; /* 设置a标签相对于其父元素水平居中 */
+}
