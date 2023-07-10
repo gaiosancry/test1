@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pinball</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+
+<body>
+    <audio id="backgroundMusic" src="02 Approval desire.mp3" loop controls volume="0.5"></audio>
+    <audio id="collisionSound" src="14419.mp3"></audio>
+    <div id="app">
+        <span id="ball" class="ball-before-move ball"></span>
+        <span id="baffle"></span>
+        <span id="actionBtn">
+            开始游戏
+            <br>
+            by lgy
+        </span>
+        <button id="rulesBtn">规则</button>
+        <div id="gameInformation">
+            <div class="fraction-container">分数：<span id="fraction">100</span></div>
+            <div class="time-container">时长：<span id="playtime">0</span>s</div>
+        </div>
+        <div id="result"></div>
+        <div id="rulesContainer"></div>
+    </div>
+    <script src="base.js"></script>
+    
+</body>
+<script>
+    document.getElementById("actionBtn").addEventListener("click", function() {
+        var backgroundMusic = document.getElementById("backgroundMusic");
+        backgroundMusic.play();
+    });
+    document.getElementById("rulesBtn").addEventListener("click", function() {
+        var rulesContainer = document.getElementById("rulesContainer");
+        rulesContainer.innerHTML = '<textarea readonly style="width: 20%; height: 15%;">' + "游戏玩法：这是一个弹珠台游戏程序，键盘操作为： 左右键控制挡板，游戏的主要目的是接住球来赢取尽量多的分数。球会以高速在游戏区域内弹射，玩家需要在球落地前接住球，每接住一次得10分，球每落地一次扣30分。游戏左上角会显示当前分数和已持续时间。如果分数低于0则判定游戏失败。游戏失败后会显示玩家在游戏中坚持了多少秒。" + '</textarea>';
+    });
+</script>
+
+</html>
